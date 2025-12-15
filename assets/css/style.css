@@ -14,7 +14,7 @@ h2, h3 {
     font-family: "Playfair Display", serif;
 }
 
-/* ===== HEADER MEJORADO ===== */
+/* ===== HEADER ===== */
 
 .enhanced-navbar {
     background: rgba(20, 20, 20, 0.45);
@@ -175,7 +175,7 @@ h2, h3 {
     margin-bottom: 10px;
 }
 
-/* ====== FIX COLOR TEXTO EN CARACTERÍSTICAS ====== */
+/* ====== TEXTO EN CARACTERÍSTICAS ====== */
 .feature-card {
     color: #ffffff;              /* Texto blanco */
     text-decoration: none;       /* Quita subrayado */
@@ -186,10 +186,10 @@ h2, h3 {
 }
 
 .feature-card p {
-    color: #cccccc;              /* Gris suave como en la imagen */
+    color: #cccccc;              
 }
 
-/* Evita que cambie a azul al hacer click */
+
 .feature-card:visited,
 .feature-card:active {
     color: #ffffff;
@@ -197,7 +197,7 @@ h2, h3 {
 
 /* Hover elegante */
 .feature-card:hover h3 {
-    color: #f5c542;              /* Dorado */
+    color: #f5c542;              
 }
 
 .feature-card:hover p {
