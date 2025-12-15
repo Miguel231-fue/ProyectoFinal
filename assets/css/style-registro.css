@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    /* CAMBIO PRINCIPAL */
+    background: #000000;
+}
+
+/* HEADER */
+.header {
+    padding: 15px 40px;
+    background: #0c0c0c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f5c542;
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav a {
+    color: #ccc;
+    margin-left: 25px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav a:hover {
+    color: #fff;
+}
+
+@keyframes moverFondo {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.menu {
+    text-align: center;
+    padding: 20px 0;
+    color: #ffffff;
+}
+
+.titulo {
+    font-size: 36px;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+.nav-centro a {
+    margin: 0 10px;
+    font-size: 17px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-centro a:hover {
+    text-decoration: underline;
+}
+
+.contenedor-form {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.formulario h2 {
+    color: #f5c542;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(30,30,30,0.9);
+    color: #ffffff;
+    font-size: 15px;
+}
+
+input::placeholder {
+    color: #bdbdbd;
+}
+
+.fila {
+    display: flex;
+    gap: 10px;
+}
+
+.fila input {
+    flex: 1;
+}
+
+#ver-imagen {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 12px;
+    display: none;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    background: #f5c542;
+    border-radius: 10px;
+    border: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ffcf5a;
+    transform: scale(1.02);
+}
+
+.login-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #cfcfcf;
+}
+
+.login-text a {
+    color: #f5c542;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
+
+.label-file {
+    font-size: 14px;
+    font-weight: bold;
+    color: #f5c542;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer {
+    background: #0a0a0a;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 40px;
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 35px;
+    padding: 0 50px;
+}
+
+.footer-section h3, 
+.footer-section h4 {
+    color: gold;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin: 6px 0;
+    opacity: 0.8;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    color: gold;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: gold;
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    background: #080808;
+    font-size: 14px;
+    opacity: 0.7;
+}

@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #0d0d0d;
+    color: white;
+}
+
+h2, h3 {
+    font-family: "Playfair Display", serif;
+}
+
+/* ===== HEADER MEJORADO ===== */
+
+.enhanced-navbar {
+    background: rgba(20, 20, 20, 0.45);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.4s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+}
+
+.enhanced-navbar.scrolled {
+    background: rgba(10, 10, 10, 0.85);
+    padding: 10px 50px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-icon {
+    font-size: 30px;
+    color: gold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 15px;
+    transition: 0.3s;
+    padding-bottom: 3px;
+}
+
+.nav-links a:hover {
+    color: gold;
+    border-bottom: 2px solid gold;
+}
+
+/* ===== HERO ===== */
+.hero {
+    height: 100vh;
+    background: url('https://i.ibb.co/35kwHc0V/banner.png') center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px black;
+}
+
+/* ===== TITLES ===== */
+.section-title {
+    text-align: center;
+    margin: 50px 0 20px;
+    font-size: 32px;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background: gold;
+    display: block;
+    margin: 8px auto 0;
+}
+
+/* ===== CARDS ===== */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.portfolio-card {
+    width: 320px;
+    background: #1b1b1b;
+    border-radius: 18px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.portfolio-card img {
+    width: 100%;
+    display: block;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.08);
+}
+
+.portfolio-info {
+    padding: 18px;
+    text-align: left;
+}
+
+.portfolio-info h3 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 6px;
+}
+
+.portfolio-info p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* ===== CARACTERÍSTICAS ===== */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+    padding: 40px;
+}
+
+.feature-card {
+    background: linear-gradient(145deg, #111, #1c1c1c);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(255,215,0,0.25);
+}
+
+.icon {
+    font-size: 45px;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+/* ====== FIX COLOR TEXTO EN CARACTERÍSTICAS ====== */
+.feature-card {
+    color: #ffffff;              /* Texto blanco */
+    text-decoration: none;       /* Quita subrayado */
+}
+
+.feature-card h3 {
+    color: #ffffff;
+}
+
+.feature-card p {
+    color: #cccccc;              /* Gris suave como en la imagen */
+}
+
+/* Evita que cambie a azul al hacer click */
+.feature-card:visited,
+.feature-card:active {
+    color: #ffffff;
+}
+
+/* Hover elegante */
+.feature-card:hover h3 {
+    color: #f5c542;              /* Dorado */
+}
+
+.feature-card:hover p {
+    color: #e0e0e0;
+}
+
+/* ===== TESTIMONIOS ===== */
+.testimonios {
+    text-align: center;
+    padding: 40px;
+    font-style: italic;
+}
+
+/* ===== CONTACTO ===== */
+form {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    background: #1a1a1a;
+    color: white;
+    border: 1px solid #333;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    background: gold;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: rgb(240, 203, 57);
+}
+
+/* ===== ANIMACIONES ===== */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.2s forwards;
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 1s forwards;
+}
+
+.zoom {
+    opacity: 0;
+    animation: zoomIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+    0% { transform: scale(0.9); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.alert {
+    text-align: center;
+    margin-top: 20px;
+    color: gold;
+}
+
+/* ===== FOOTER ===== */
+
+.footer {
+    background: #0a0a0a;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 40px;
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 35px;
+    padding: 0 50px;
+}
+
+.footer-section h3, 
+.footer-section h4 {
+    color: gold;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin: 6px 0;
+    opacity: 0.8;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    color: gold;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: gold;
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    background: #080808;
+    font-size: 14px;
+    opacity: 0.7;
+}

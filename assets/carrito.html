@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WEBFLUX - Carrito</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style-carrito.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+    <header class="header">
+        <a href="index.html" class="logo">WEBFLUX</a>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="index.html">Artistas</a>
+            <a href="productos.html">Productos</a>
+            <a href="index.html">Contacto</a>
+            <a class="nav-link ms-3 d-flex align-items-center" href="carrito.html">
+            <i class="bi bi-cart-fill" style="font-size:1.15rem"></i>
+            <span id="contadorCarrito" class="badge bg-purple text-white ms-1">0</span>
+          </a>
+        </nav>
+    </header>
+
+  <main class="container mt-5">
+    <h2 class="text-center mb-3">Carrito de compras</h2>
+
+    <p class="text-center"><strong>Visitas al sitio:</strong> <span id="contadorVisitas">0</span></p>
+
+    <div id="listaCarrito" class="mb-4"></div>
+
+    <div class="d-flex justify-content-center">
+      <button class="btn btn-danger" onclick="vaciarCarrito()">Vaciar carrito</button>
+    </div>
+  </main>
+
+  <footer class="site-footer mt-5">
+    <div class="container text-center py-3">© 2025 WEBFLUX - Todos los derechos reservados.</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script-carrito.js"></script>
+  <!-- TOAST -->
+<div id="toast" class="toast-notify">Producto agregado</div>
+</body>
+</html>

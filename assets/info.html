@@ -1,1 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBFLUX - Arte</title>
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar enhanced-navbar">
+    <div class="nav-left">
+        <span class="material-icons-outlined nav-icon">palette</span>
+        <h1 class="logo">WEBFLUX</h1>
+    </div>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#portafolios">Portafolio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#caracteristicas">Características</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+        <div class="hero-content fade-in">
+            <h2>Descubre el Arte</h2>
+            <p>La mejor plataforma para que artistas exhiban y vendan sus portafolios</p>
+        </div>
+    </section>
+
+    <!-- PORTAFOLIOS DESTACADOS -->
+<section id="portafolios" class="py-20 bg-[#111] text-center">
+    <h2 class="section-title">Portafolios Destacados</h2>
+
+    <div class="cards-container">
+        
+        <!-- ARTE ABSTRACTO -->
+        <div class="portfolio-card" onclick="location.href='arte-abstracto.html'">
+            <img src="assets/img/arteabs.jpg" alt="Arte Abstracto">
+            <div class="portfolio-info">
+                <h3>Arte Abstracto</h3>
+                <p>Exploración de formas y colores en composiciones únicas.</p>
+            </div>
+        </div>
+
+        <!-- MODERNO Y CONTEMPORÁNEO -->
+        <div class="portfolio-card" onclick="location.href='moderno-contemporaneo.html'">
+            <img src="assets/img/moderno.jpg" alt="Moderno y Contemporáneo">
+            <div class="portfolio-info">
+                <h3>Moderno y Contemporáneo</h3>
+                <p>Una visión fresca y dinámica del arte moderno.</p>
+            </div>
+        </div>
+
+        <!-- ESCULTURAS INÉDITAS -->
+        <div class="portfolio-card" onclick="location.href='esculturas-ineditas.html'">
+            <img src="assets/img/esculturas.jpg" alt="Esculturas Inéditas">
+            <div class="portfolio-info">
+                <h3>Esculturas Inéditas</h3>
+                <p>Formas tridimensionales que desafían lo convencional.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- NOSOTROS -->
+    <section class="nosotros fade-in" id="nosotros">
+        <h2 class="section-title">Nosotros</h2>
+        <p>
+            WEBFLUX es una plataforma innovadora que permite a los artistas crear, exhibir y vender sus portafolios de forma profesional.
+            Nuestro objetivo es conectar el talento creativo con el mundo y brindar herramientas de calidad para la expresión artística.
+        </p>
+    </section>
+
+    <!-- CARACTERÍSTICAS -->
+<section id="caracteristicas" class="py-20 bg-[#111] text-center">
+    <h2 class="section-title">Características</h2>
+
+    <div class="features-grid">
+
+        <!-- Creatividad -->
+        <a href="registro.html" class="feature-card slide-up">
+            <span class="material-icons-outlined icon">verified_user</span>
+            <h3>Creatividad Ilimitada</h3>
+            <p>inicia sesión y accede a todos los portafolios que tenemos.</p>
+        </a>
+
+        <!-- Diseño -->
+        <a href="productos.html" class="feature-card slide-up">
+            <span class="material-icons-outlined icon">shopping_cart</span>
+            <h3>Nuestros Productos</h3>
+            <p>Compra y vende arte con confianza.</p>
+        </a>
+
+        <!-- Transacciones -->
+        <a href="carrito.html" class="feature-card slide-up">
+            <span class="material-icons-outlined icon">attach_money</span>
+            <h3>Sección de Pago</h3>
+            <p>Paga los productos que añadiste al carrito.</p>
+        </a>
+
+        <!-- Comunidad -->
+        <a href="user.html" class="feature-card slide-up">
+            <span class="material-icons-outlined icon">android</span>
+            <h3>Asistente en Linea</h3>
+            <p>Si tienes dudas consulta con nuestro bot inteligente.</p>
+        </a>
+
+    </div>
+</section>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonios fade-in">
+        <h2 class="section-title">Testimonios</h2>
+        <p class="testimonial-text">
+            "La plataforma es intuitiva y el diseño es excepcional. ¡Recomiendo WEBFLUX a todo artista!"
+        </p>
+        <span class="autor">- Andres Barrios</span>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto" id="contacto">
+        <h2 class="section-title">Contacto</h2>
+
+        <form id="contactForm" class="slide-up">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="email" id="correo" placeholder="Correo Electrónico" required>
+            <textarea id="mensaje" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+        <h2 class="section-title">Puedes encontrarnos aqui</h2>
+        <div class="col-md-6">
+        <iframe src="https://maps.google.com/maps?q=barranquilla&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;"></iframe>
+      </div>
+    </div>
+  </main>
+
+        <p id="formAlert" class="alert"></p>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <h3>WEBFLUX</h3>
+            <p>Conectando artistas con el mundo a través de la creatividad y la innovación digital.</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Socios & Aliados</h4>
+            <ul>
+                <li>ArtConnect</li>
+                <li>GlobalArt Hub</li>
+                <li>Creative Market</li>
+                <li>Artists United</li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Enlaces útiles</h4>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#portafolios">Portafolios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Síguenos</h4>
+            <div class="social-icons">
+                <a href="#"><span class="material-icons-outlined">facebook</span></a>
+                <a href="#"><span class="material-icons-outlined">alternate_email</span></a>
+                <a href="#"><span class="material-icons-outlined">camera_alt</span></a>
+                <a href="#"><span class="material-icons-outlined">play_circle</span></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 WEBFLUX. Todos los derechos reservados.</p>
+    </div>
+
+</footer>
+</body>
+</html>
